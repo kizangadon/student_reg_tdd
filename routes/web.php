@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/test', function(){
     return view('test');
 });
+
+Route::post('/student', 'StudentController@store');
+
+Route::post('/subject', 'SubjectController@store');
